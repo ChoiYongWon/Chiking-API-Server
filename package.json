@@ -1,0 +1,22 @@
+{
+  "name": "chiking2.0",
+  "version": "1.0.0",
+  "description": "remodeling version of chiking",
+  "main": "server.js",
+  "scripts": {
+    "test": "chiking"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChoiYongWon/chiking2.0.git"
+  },
+  "author": "ChoiYongWon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChoiYongWon/chiking2.0/issues"
+  },
+  "homepage": "https://github.com/ChoiYongWon/chiking2.0#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
