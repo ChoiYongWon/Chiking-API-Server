@@ -1,5 +1,6 @@
 var mongoose = require("mongoose")
 const url = "mongodb+srv://root:kelly10975@cluster0-ebww6.gcp.mongodb.net/test?retryWrites=true&w=majority";
+var User = require("./schema/user")
 
 module.exports = () => {
     const connect = () =>{
@@ -14,10 +15,20 @@ module.exports = () => {
                     console.log("몽고디비 에러")
                 }else{
                     console.log("몽고디비 연결 성공")
-
+                    // var user = new User({
+                    //     id:"01041308737",
+                    //     name: "최용원",
+                    //     age: 20,
+                    //     gender: "male",
+                    //     vote: false,
+                    //     chicken_name:"None",
+                    //     chicken_type:"None"
+                    // })
+                    // user.save()
                     //init.init()
-                    // var chickens = Chicken.find({type:"굽네"}, (err, info)=>{
-                    //     console.log(info)
+                //     var user = User.findOne({name:"최용원"}, (err, info)=>{
+                //         console.dir(info)
+                //    })
                 }
                    }       )
     }
