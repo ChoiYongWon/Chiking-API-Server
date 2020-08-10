@@ -7,9 +7,13 @@ router.post("/", async(req,res)=>{
     var pw = req.body.pw;
     var user_data = await User.findOne({id:phonenum})
     if(user_data!=null){
-        var data = user_data._doc
+        var data = user_data
         if(pw==data.pw){
             req.session.logined = true;
+            req.session.user = {
+                id:phonenum,
+                name:data.name
+            }
             res.json({
                 status:true,
                 message: "login successfully"

@@ -8,6 +8,7 @@ var route_user = require("./routes/restapi/user")
 var route_chicken = require("./routes/restapi/chicken")
 var route_login = require("./routes/restapi/login")
 var route_logout = require("./routes/restapi/logout")
+var route_vote = require("./routes/restapi/vote")
 
 
 
@@ -34,6 +35,7 @@ app.use("/user",route_user)
 app.use("/chicken",route_chicken)
 app.use("/login", route_login)
 app.use("/logout", route_logout)
+app.use("/vote",route_vote)
 
 app.get("/",(req,res)=>{
     res.sendFile(__dirname+"/public/html/index.html")
