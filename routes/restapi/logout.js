@@ -2,7 +2,7 @@ var express = require("express")
 var router = express.Router()
 var User = require("../../db/schema/user")
 
-router.post("/", async(req,res)=>{
+router.post("/", (req,res)=>{
     if(req.session.logined){
         req.session.destroy();
         res.json({
