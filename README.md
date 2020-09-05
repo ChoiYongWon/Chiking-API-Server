@@ -1,1 +1,1 @@
-remodeling version of chiking1.0
+Chiking 2.0 's API Server
